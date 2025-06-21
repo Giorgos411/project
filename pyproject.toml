@@ -1,0 +1,32 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "lastchancecy",email = "giorgos.giorgos2003@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "transformers (>=4.51.3,<5.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "tiktoken (>=0.9.0,<0.10.0)",
+    "protobuf (>=6.31.0,<7.0.0)",
+    "blobfile (>=3.0.0,<4.0.0)",
+    "sentencepiece (>=0.2.0,<0.3.0)",
+    "language-tool-python (>=2.9.3,<3.0.0)",
+    "sentence-transformers (>=4.1.0,<5.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)"
+]
+
+[tool.poetry]
+packages = [{include = "my_project", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^80.8.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
